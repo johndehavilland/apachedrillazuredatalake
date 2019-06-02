@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+<property>
+     <name>dfs.adls.oauth2.access.token.provider.type</name>
+     <value>ClientCredential</value>
+</property>
+<property>
+     <name>dfs.adls.oauth2.refresh.url</name>
+     <value>https://login.microsoftonline.com/[TENANT_ID]/oauth2/token</value>
+</property>
+<property>
+     <name>dfs.adls.oauth2.client.id</name>
+     <value>[APPLICATION ID]</value>
+</property>
+<property>
+     <name>dfs.adls.oauth2.credential</name>
+     <value>[APPLICATION KEY]</value>
+</property> 
+<property>
+     <name>fs.adl.impl</name>
+     <value>org.apache.hadoop.fs.adl.AdlFileSystem</value>
+</property>
+<property>
+     <name>fs.AbstractFileSystem.adl.impl</name>
+     <value>org.apache.hadoop.fs.adl.Adl</value>
+</property>
+</configuration>
