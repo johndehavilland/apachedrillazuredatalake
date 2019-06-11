@@ -7,9 +7,16 @@ docker build -t johndh/drill .
 
 docker run -i -p 8047:8047 -p 31010:31010 -t johndh/drill bin/bash
 
-SHOW FILES FROM `datalake`;
+## Running Commands
 
+Here are a couple of example queries to get started:
+
+```
+SHOW FILES FROM `datalake`;
+```
+```
 SELECT * FROM datalake.`parquet/userdata1.parquet`
+```
 
 ## Connecting to PowerBI
 1. Make sure to install the MapR ODBC driver.
